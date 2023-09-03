@@ -19,7 +19,7 @@ class Solution:
 s = Solution()
 print(s.lengthOfLongestSubstring("abcabcbb"))  # 3
 print(s.lengthOfLongestSubstring("bbbbb"))  # 1
-print(s.lengthOfLongestSubstring("pwwkew"))  # 3
+print(s.lengthOfLongestSubstring("pwwkew"))  # 3, wke
 print(s.lengthOfLongestSubstring("abc"))  # 3
 print(s.lengthOfLongestSubstring("ab"))  # 2
 print(s.lengthOfLongestSubstring("a"))  # 1
