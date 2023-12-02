@@ -21,3 +21,8 @@ def solution(A: List[int]) -> int:
             cur_sum = int(bin_sum(cur_sum, ele), 2)
 
     return res
+
+
+A = [7, 13, 8, 2, 3]
+print(f"your output: {solution(A)}")
+print("expected output: 3")
