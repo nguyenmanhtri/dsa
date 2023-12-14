@@ -26,6 +26,24 @@ def solution(A: List[int]) -> int:
     return res
 
 
+def solution_b(A):
+    res = 0
+    curr_max = A[0]
+    for i in range(len(A)):
+        curr_max = max(curr_max, A[i])
+
+        if i == len(A) - 1 or curr_max <= A[i + 1]:
+            res += 1
+
+    return res
+
+
 A = [2, 4, 1, 6, 5, 9, 7]
-print(f"your output: {solution(A)}")
-print("expected output: 3")
+# print(f"your output: {solution(A)}")
+print(f"your output: {solution_b(A)}")
+print("expected output: 3\n")
+
+A = [1, 2, 0, 3]
+# print(f"your output: {solution(A)}")
+print(f"your output: {solution_b(A)}")
+print("expected output: 2")
